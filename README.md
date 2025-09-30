@@ -41,7 +41,7 @@ Additionally, it leverages the **Gemini API** to provide AI-powered responses fo
 ## ⚙️ Tech Stack
 
 ### 📱 Frontend (Android App)
-- **Language**: Kotlin  
+- **Language**: Java  
 - **Functions**: QR code scanning, device/user registration, lending, returning, reporting  
 - **UI**: Simple Material Design  
 
