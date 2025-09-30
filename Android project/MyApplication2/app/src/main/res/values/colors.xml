@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="available_green">#4CAF50</color>
+    <color name="checked_out_gray">#888888</color>
+    <color name="report_device_background">#FFE0B2</color>    <!-- オレンジ系（淡い黄色） -->
+    <color name="report_user_background">#B3B71C1C</color>  <!-- 濃い赤 + 70%不透明 -->
+</resources>

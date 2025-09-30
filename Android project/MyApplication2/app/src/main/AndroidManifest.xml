@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.qrscanner">
+
+    <!-- 仅相机扫码必需 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 如需旧式直接读取图库（不推荐），请加上以下两行：
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    -->
+    <!-- 声明相机硬件可选（大多数扫码应用都推荐这样写） -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">   <!-- API 31+：含 intent-filter 必须写 exported -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".ScanActivity"
+            android:theme="@style/Theme.MyApplication"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name=".NewDeviceActivity" />
+        <activity android:name=".NewUserActivity" />
+        <activity android:name=".LendActivity" />
+        <activity android:name=".ReturnActivity" />
+        <activity android:name=".ReturnResultActivity" />
+        <activity android:name=".LendResultActivity"/>
+        <activity android:name=".DeviceListActivity" />
+        <activity android:name=".Report_NewDeviceActivity" />
+        <activity android:name=".Report_NewDeviceResultActivity"/>
+        <activity android:name=".Report_DeviceReportResultActivity"/>
+        <activity android:name=".Report_DeviceReportActivity"/>
+        <activity android:name=".ReportListActivity"/>
+   
+
+        <activity android:name=".ReportActivity" />
+
+    </application>
+</manifest>
