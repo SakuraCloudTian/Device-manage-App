@@ -1,5 +1,5 @@
-# Device-manage-App
-
+# Device-manage-App ——2025/09
+ 
 This project is a **QR Code-Based Device Management System**, designed to simplify the process of **registering, lending, returning, and managing devices** in labs or enterprises.  
 
 It consists of an **Android front-end application** and a **Python backend service** integrated with a **MySQL database**.  
